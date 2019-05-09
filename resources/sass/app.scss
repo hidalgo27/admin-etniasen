@@ -1,0 +1,32 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// summernote
+// @import '~summernote/dist/summernote-bs4.css';
+
+// tinymce
+@import '~tinymce/skins/ui/oxide/skin.min.css';
+@import '~tinymce/skins/content/default/content.css';
+@import '~tinymce/skins/ui/oxide/content.min.css';
+@import '~tinymce/skins/ui/oxide/skin.min.css';
+
+//fonts
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+//query
+@import '~jquery-ui/themes/base/all.css';
+//calendar
+@import "~air-datepicker/dist/css/datepicker.css";
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}

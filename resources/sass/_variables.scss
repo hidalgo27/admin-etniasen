@@ -1,0 +1,301 @@
+
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: "Nunito", sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+$fa-font-path:        "../webfonts";
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66D9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+// mis clases
+body {
+    overflow-x: hidden;
+  }
+
+  #wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+
+  #wrapper.toggled {
+    padding-left: 250px;
+  }
+
+  #sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    // background:#eaeaea;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+  }
+
+  #page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+  }
+
+  #wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+  }
+
+
+  /* Sidebar Styles */
+
+  .sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .sidebar-nav li {
+    text-indent: 10px;
+    line-height: 40px;
+  }
+
+  .sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+  }
+
+  .sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .sidebar-nav li a:active, .sidebar-nav li a:focus {
+    text-decoration: none;
+  }
+
+  .sidebar-nav>.sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+  }
+
+  .sidebar-nav>.sidebar-brand a {
+    color: #999999;
+  }
+
+  .sidebar-nav>.sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+  }
+
+  @media(min-width:768px) {
+    #wrapper {
+      padding-left: 0;
+    }
+    #wrapper.toggled {
+      padding-left: 250px;
+    }
+    #sidebar-wrapper {
+      width: 0;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+      width: 250px;
+    }
+    #page-content-wrapper {
+      padding: 20px;
+      position: relative;
+    }
+    #wrapper.toggled #page-content-wrapper {
+      position: relative;
+      margin-right: 0;
+    }
+  }
+
+  .nav-item:hover{
+    background: #ccc;
+    color: #000 !important;
+  }
+  .item-menu{
+
+    border-bottom: rgb(211, 211, 211) solid 1px;
+  }
+  .item-titulo{
+    color: #4b4b4b;
+    font-size: 1.2rem;
+    font-stretch: expanded;
+  }
+  .item-titulo:hover{
+    color:#000 !important;
+  }
+  a:active{
+    background: #ccc;
+    color: #000 !important;
+  }
+
+  /* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+#sidebar {
+
+
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 999;
+  //background: #7386D5;
+  //color: #fff;
+  transition: all 0.3s;
+}
+
+#sidebar.active {
+  margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+  padding: 5px 0;
+  //background: #6d7fcc;
+}
+
+#sidebar ul.components {
+  //padding: 20px 0;
+  border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+  //color: #fff;
+  //padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+  text-decoration: none;
+}
+#sidebar ul li a:hover {
+  color: #959595;
+  background: #bdbdbd;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+  color: #fff;
+  background: #f9a825;
+}
+
+  .menu1{
+    list-style-type: none;
+    padding: 0;
+  }
+  .menu1 li a{
+    list-style-type: none;
+    background: white;
+    color: #000;
+  }
+  .menu2{
+    list-style-type: none;
+  }
+  .menu2 li a{
+    list-style-type: none;
+    background: white !important;
+    color: #000 !important;;
+  }
+  .menu2 li a:hover{
+    background: #bbbbbb !important;
+  }
+  .menu2 li a.active{
+    background: #bbbbbb !important;
+  }
+
+
+  .reserva-caja{
+      margin-top: 5px;
+      margin-bottom: 5px;
+      padding-top: 5px;
+      background: #e6e5e5;
+      border-bottom: 1px solid #d4d4d4;
+  }
+
+.text-10{
+    font-size: 10px;
+}
+.text-11{
+    font-size: 11px;
+}
+.text-12{
+font-size: 12px;
+}
+.text-15{
+    font-size: 15px;
+}.text-18{
+    font-size: 18px;
+}.text-20{
+    font-size: 20px;
+}
+.bg-advertencia{
+    background: #ffc3be;
+}
+.datepicker--cell.-in-range- {
+  background:#5cc4ef;
+  color: #4a4a4a;
+  border-radius: 0;
+}
+  .dp-note {
+    background: #009688;
+    min-width: 20px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 10px;
+    border: #000 0px solid;
+
+    // background: #ccc;
+    // width: 4px;
+    // height: 4px;
+    // border-radius: 50%;
+    // left: 50%;
+    // bottom: 1px;
+    // -webkit-transform: translateX(-50%);
+    // transform: translateX(-50%);
+  }
+  .dp-note_2 {
+    background: #e40e0e;
+    min-width: 20px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 10px;
+    border: #000 0px solid;
+
+    // background: #ccc;
+    // width: 4px;
+    // height: 4px;
+    // border-radius: 50%;
+    // left: 50%;
+    // bottom: 1px;
+    // -webkit-transform: translateX(-50%);
+    // transform: translateX(-50%);
+  }
