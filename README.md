@@ -1,2 +1,1 @@
-# admin-etnias
-Admin Etnias
+# admin-etniasen
